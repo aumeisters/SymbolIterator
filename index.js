@@ -11,10 +11,8 @@ class Iterable {
         if (startPoint < num) {
           result.value = String(Math.round(Math.random()))
             .concat(".")
-            .concat(
-              String(Math.floor(Math.random() * 10)).concat(
-                String(Math.floor(Math.random() * 10))
-              )
+            .concat(String(Math.floor(Math.random() * 10))
+            .concat(String(Math.floor(Math.random() * 10)))
             );
           result.done = false;
           startPoint += 1;
